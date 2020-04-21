@@ -9,9 +9,19 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../css/navbar.css">    </head>
     <body>
+      <div class="topnav" id="myTopnav">
+        <a href="../index.html">Nidhi Lakshmanan</a>
+        <a href="project.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a class="w3-disabled">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -34,3 +44,13 @@
         <script src="" async defer></script>
     </body>
 </html>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
