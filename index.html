@@ -12,8 +12,11 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/navbar.css">
+
     </head> 
     <body>
+      <div class = "bgImg"> 
+
         <div class="topnav" id="myTopnav">
             <a class="w3-disabled">Nidhi Lakshmanan</a>
             <a href="pages/resume.html">Resume</a>
@@ -27,15 +30,49 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class = "bgImg"> </div>
         <div class = "name">
-            <center><h1> Nidhi Lakshmanan </h1></center>
+            <center><h1> welcome to my meadow </h1></center>
         </div>
-        <div class = "name2">
-          <center><h5> csula | computer science </h5></center>
+        <div class="endOfLine"> 
+          <h11 style="color:rgb(238, 158, 225)";> this is my sad attempt at being asthecicitic 😔</h11>
+        </div>
+
+        <div id="app">
+          <img class="glitter-star" src="https://dl.dropboxusercontent.com/s/soxcov4m81dx55l/star.svg">
+        </div>
+
       </div>
+
+        
+        
+
     </body>
 </html>
+<script>
+  const app = document.getElementById('app')
+
+  const myRand = () => {
+    let r = 50
+     while (40 < r && r < 60) {
+     r = Math.random() * 100
+     }
+    return r
+  }
+
+  for (let i = 0; i < 50; i++) {
+    const delay = Math.random() + 's';
+   const el = document.createElement('img')
+   el.src            = 'https://dl.dropboxusercontent.com/s/soxcov4m81dx55l/star.svg'
+   el.className      = 'glitter-star'
+   el.style.top      = myRand() + '%'
+   el.style.left     = myRand() + '%'
+   el.style.animationDelay       = delay
+    el.style.msAnimationDelay     = delay
+   el.style.webkitAnimationDelay = delay
+   el.style.monAnimationDelay    = delay
+   app.appendChild(el)
+  }
+</script>
 <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");

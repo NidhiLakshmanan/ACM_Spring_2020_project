@@ -1,8 +1,9 @@
 body, html {height: 100%;}
 
 .bgImg{
-    background-image: url('../background.jpg');
+    background-image: url('../background.png');
     height: 100%;
+    width: 100%;
     background-position: center;
     background-size: cover;
 }
@@ -15,12 +16,80 @@ body, html {height: 100%;}
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-.name2{
+.line1{
     padding: 1em;
     position: absolute;
-    top: 55%;
-    left: 50%;
-    margin-right: -50%;
+    top: 60%;
+    left: 40%;
     transform: translate(-50%, -50%)
 }
 
+.line2{
+    padding: 1em;
+    position: absolute;
+    top: 63%;
+    left: 48%;
+    transform: translate(-50%, -50%)
+}
+
+.line3{
+    padding: 1em;
+    position: absolute;
+    top: 66%;
+    left: 56%;
+    transform: translate(-50%, -50%)
+}
+
+.line4{
+    padding: 1em;
+    position: absolute;
+    top: 69%;
+    left: 64%;
+    transform: translate(-50%, -50%)
+}
+
+.endOfLine{
+    padding: 1em;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.transparent {
+    background-color: rgba(255,255,255,0.5);
+}
+  
+  img.glitter-star {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+  
+    animation: glitter 2s linear 0s infinite normal;
+    -webkit-animation: glitter 2s linear 0s infinite normal;
+    -moz-animation: glitter 2s linear 0s infinite normal;
+    -ms-animation: glitter 2s linear 0s infinite normal;
+    -o-animation: glitter 2s linear 0s infinite normal;
+  }
+  
+  @keyframes glitter {
+    0% {
+      -webkit-transform: scale(1.0);
+      opacity: 1;
+    }
+    25% {
+      -webkit-transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(1.0);
+      opacity: 1;
+    }
+    75% {
+      -webkit-transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1.0);
+      opacity: 1;
+    }
+  }
